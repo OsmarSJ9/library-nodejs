@@ -7,16 +7,16 @@
 
         <div class="row">
             <% for(let i=0; i < books.length; i++) { %>
-                <div class="col-sm-6">
+                <div class="col-sm-3">
                     <div class="card">
-                        <img src="../imagens/php.png" class="card-img-top" alt="...">
+                        <img src="<%= books[i].imagen%>" class="card-img-top" alt="..." width="200px">
 
                         <div class="card-body">
                             <h5 class="card-title"><%= books[i].title %></h5>
                             <p class="card-text"><%= books[i].description %><br>
-                                Precio: $ <%= books[i].price%>
+                                <h5>$<%= books[i].price%></h5>
                             </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,8 @@
             <% } %>
         </div>
         
-
     </div>
+
+
 
     <% include layouts/footer.ejs %>
