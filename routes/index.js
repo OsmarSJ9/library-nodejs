@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/about', (request, response, next)=>{
-  response.render( "about", {title : "about us", numbers : "76438963 - 76464008", phone : "Phone:" });
+  response.render( "about", {title : "About us", numbers : "76438963 - 76464008", phone : "Phone:" });
 });
 
 
